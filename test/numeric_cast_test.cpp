@@ -21,10 +21,14 @@
 #      error "This test program doesn't work if SCHAR_MAX == LONG_MAX"
 #  endif
 
+#if defined(_MSC_VER)
+# pragma warning(disable: 4244) // conversion, possible loss of data
+#endif
+
 using namespace boost;
 using std::cout;
 
-int test_main( int argc, char * argv[] )
+int test_main( int, char *[] )
 {
 
 #   ifdef NDEBUG

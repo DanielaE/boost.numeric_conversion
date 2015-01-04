@@ -545,7 +545,7 @@ void test_optimizations()
   //---------------------------------
 }
 
-int test_main( int, char* argv[] )
+int test_main( int, char*[] )
 {
   std::cout << std::setprecision( std::numeric_limits<long double>::digits10 ) ;
 
