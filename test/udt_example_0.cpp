@@ -15,6 +15,10 @@
 #include<string>
 #include<cmath>
 
+#if defined(_MSC_VER)
+#pragma warning(disable: 4305) // truncation from 'double' to 'float'
+#pragma warning(disable: 4244) // conversion from 'x' to 'y', possible loss of data
+#endif
 
 #include "boost/test/included/test_exec_monitor.hpp"
 
