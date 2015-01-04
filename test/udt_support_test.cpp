@@ -12,6 +12,10 @@
 #include<vector>
 #include<algorithm>
 
+#if defined(_MSC_VER)
+#pragma warning(disable: 4244) // conversion from 'x' to 'y', possible loss of data
+#endif
+
 #include "boost/numeric/conversion/converter.hpp"
 
 #ifdef __BORLANDC__

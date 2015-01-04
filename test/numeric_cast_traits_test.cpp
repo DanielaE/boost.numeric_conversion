@@ -370,7 +370,7 @@ void test_numeric_cast_traits()
     BOOST_CHECK( five == 5 );
 }
 
-int test_main( int argc, char * argv[] )
+int test_main( int, char *[] )
 {
     test_numeric_cast_traits();
     return 0;
